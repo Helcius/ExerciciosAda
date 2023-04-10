@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<style>
+    .border-task {
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+        margin-top: 10px;
+    }
+    .d-none {
+        display: none;
+    }
+
+
+</style>
+
+<body>
+    <form class="task-list">
+    <p name="título">Insira o título da tarefa:</p>
+    <input type="text">
+    <p name="descriçãp">Insira a descrição da tarefa:</p>
+    <input type="text">
+    <br><br><input type="submit" value="Adicionar" id="retorno-submit">
+    </form>
+
+
+
+    <template>
+    <div id="template-task" class="border-task d-none" > 
+        <p id="titulo-task">exemplo task titulo</p>
+        <p id="descrição-task">exemplo task descrição</p>
+        <input type="checkbox">
+        <span id="task-complete">Tarefa Concluida</span>
+        <span id="task-incomplete">Tarefa Incompleta</span>
+    </div>
+    </template>
+
+    
+<script src="jsexercicio.js"></script>
+</body>
+</html>
